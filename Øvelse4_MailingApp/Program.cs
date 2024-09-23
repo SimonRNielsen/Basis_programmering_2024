@@ -12,7 +12,7 @@ namespace Øvelse4_MailingApp
         {
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
-            Console.WriteLine("What is your streetname?");
+            Console.WriteLine("Which street do you live on?");
             string road_name = Console.ReadLine();
             Console.WriteLine("Which housenumber?");
             int house_number = Convert.ToInt32(Console.ReadLine());
