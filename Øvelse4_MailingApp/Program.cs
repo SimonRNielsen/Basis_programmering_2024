@@ -29,18 +29,17 @@ namespace Øvelse4_MailingApp
             Console.WriteLine("What is your phonenumber?");
             int phone = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Finally, what is your email address?");
-            enter_email: 
+            enter_email: // Label som "goto" kan springe til
             string email = Console.ReadLine();
-            if (email.Contains("@") && email.Contains("."))
+            if (email.Contains("@") && email.Contains(".")) // Tjekker om der er @ og . i mailadressen
             {
                 Console.WriteLine("Valid email format! Thank you!");
             }
             else
             {
                 Console.WriteLine("Invalid email format, please try again!");
-                goto enter_email;
+                goto enter_email; // Springer til label så den looper indtil der er en gyldig email-adresse
             }
-            // Console.WriteLine("Invalid email, please try again!");
             Console.WriteLine("You input following information:");
             Console.WriteLine($"Name = {name}");
             Console.WriteLine($"Address = {road_name} {house_number}{house_letter}");
