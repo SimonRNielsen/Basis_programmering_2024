@@ -22,6 +22,11 @@ namespace Øvelse5
             Console.WriteLine($"Dividing these two yields {x / y} if you divide the first number with the second");
             Console.WriteLine($"Dividing these two yields {y / x} if you divide the second number with the first");
             Console.WriteLine($"First number becomes {x += y} if assigned the sum of first and second number added");
+            Console.WriteLine($"First number becomes {y += x} if assigned the sum of second and first number added");
+            Console.WriteLine($"First number becomes {x -= y} if the first number is substacted with the second");
+            Console.WriteLine($"First number becomes {y -= x} if the second number is substacted with the first");
+            Console.WriteLine($"First number becomes {x *= y} if the first number is multiplied by the second");
+            Console.WriteLine($"First number becomes {y *= x} if the second number is multiplied by the first");
             Console.ReadKey();
         }
     }
