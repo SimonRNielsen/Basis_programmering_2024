@@ -82,20 +82,6 @@ namespace Øvelse2
                     Console.WriteLine("Your choices for this race is 'Warrior', 'Hunter', 'Mage'");
                     player_class = Console.ReadLine();
                     break;
-                default:
-                    if (faction.ToLower() == "alliance")
-                    {
-                        player_class = "Human";
-                        Console.WriteLine("Your choices for this race is: 'Warrior', 'Mage', 'Warlock'");
-                        player_class = Console.ReadLine();
-                    }
-                    else
-                    {
-                        player_class = "Orc";
-                        Console.WriteLine("Your choices for this race is: 'Warrior', 'Mage', 'Warlock'");
-                        player_class = Console.ReadLine();
-                    }
-                    break;
             }
             switch (player_class.ToLower())
             {
@@ -117,43 +103,6 @@ namespace Øvelse2
                 case "hunter":
                     player_class = "Hunter";
                     break;
-                default:
-                    switch (race)
-                    {
-                        case "Human":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Warrior";
-                            break;
-                        case "Orc":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Warrior";
-                            break;
-                        case "Dwarf":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Paladin";
-                            break;
-                        case "Tauren":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Paladin";
-                            break;
-                        case "Night elf":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Hunter";
-                            break;
-                        case "Undead":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Hunter";
-                            break;
-                        case "Troll":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Mage";
-                            break;
-                        case "Gnome":
-                            Console.WriteLine("Invalid input, choosing default class for this race");
-                            player_class = "Mage";
-                            break;
-                    }
-                break;
             }
             Console.WriteLine("Choose your charactername!");
             playerName = Console.ReadLine();
