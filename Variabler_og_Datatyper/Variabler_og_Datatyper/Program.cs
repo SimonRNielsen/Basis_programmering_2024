@@ -11,7 +11,6 @@ namespace Variabler_og_Datatyper
     {
         static void Main(string[] args)
         {
-
             int playerGuess;
             string playerName;
             Console.WriteLine("Welcome user, would you like to play a game?");

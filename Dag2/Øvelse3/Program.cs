@@ -10,6 +10,10 @@ namespace Øvelse3
     {
         static void Main(string[] args)
         {
+            CountToTens();
+        }
+        static void CountToTens()
+        {
             int a = 0;
             do
             {
@@ -26,7 +30,7 @@ namespace Øvelse3
             {
                 for (int y = 0; y < 10; y++)
                 {
-                    Console.WriteLine("X:{0}, Y{1}", x,y);
+                    Console.WriteLine("X:{0}, Y{1}", x, y);
                 }
             }
             Console.ReadLine();
