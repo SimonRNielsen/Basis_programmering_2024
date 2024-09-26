@@ -6,12 +6,28 @@ using System.Threading.Tasks;
 
 namespace Øvelse2
 {
+    /// <summary>
+    /// Enum for races
+    /// </summary>
+    enum AllianceRace : int
+    {
+        Dwarf = 1, Human = 2, Nightelf = 3, Gnome = 4
+    }
+    enum HordeRace : int
+    {
+        Orc = 1, Troll = 2, Tauren = 3, Undead = 4
+    }
+    enum PlayerClass : int
+    {
+        Warrior = 1, Mage = 2, Warlock = 3, Priest = 4, Paladin = 5, Hunter = 6
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
             string faction = string.Empty;
-            string race = string.Empty;
+            string allianceRace = string.Empty;
+            string hordeRace = string.Empty;
             string player_class = string.Empty;
             string playerName;
             Console.WriteLine("Welcome, please create a new character!");
@@ -22,21 +38,21 @@ namespace Øvelse2
             {
                 case "alliance":
                     faction = "Alliance";
-                    Console.WriteLine("Now select a race");
-                    Console.WriteLine("Your choices are: 'Dwarf', 'Human', 'Night Elf', 'Gnome'");
-                    race = Console.ReadLine();
+                    Console.WriteLine("Now select a race, type the number for the one you want to play as");
+                    Console.WriteLine("Your choices are: \n1 = Dwarf \n2 = Human \n3 = Night Elf \n4 = Gnome");
+                    allianceRace = Console.ReadLine();
                     break;
                 case "horde":
                     faction = "Horde";
-                    Console.WriteLine("Now select a race");
+                    Console.WriteLine("Now select a race, type the number for the one you want to play as");
                     Console.WriteLine("Your choices are: 'Orc', 'Troll', 'Tauren', 'Undead'");
-                    race = Console.ReadLine();
+                    hordeRace = Console.ReadLine();
                     break;
                 default:
                     faction = "Horde";
-                    Console.WriteLine("Invalid input, defaulting to Horde");
-                    Console.WriteLine("Your choices are: 'Orc', 'Troll', 'Tauren', 'Undead'");
-                    race = Console.ReadLine();
+                    Console.WriteLine("Now select a race, type the number for the one you want to play as");
+                    Console.WriteLine("Your choices are: 'Orc' (3), 'Troll', 'Tauren', 'Undead'");
+                    hordeRace = Console.ReadLine();
                     break;
             }
             Console.WriteLine("Now select a class");
